@@ -1,4 +1,5 @@
-export class Province {
+const { Producer } = require("./producer");
+class Province {
   constructor(doc) {
     this._name = doc.name;
     this._producers = [];
@@ -38,3 +39,5 @@ export class Province {
     this._price = parseInt(arg);
   }
 }
+
+module.exports = { Province };

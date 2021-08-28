@@ -1,5 +1,5 @@
-import { Producer } from "./producer";
-import { Province } from "./province";
+const { Producer } = require("./producer");
+const { Province } = require("./province");
 
 function sampleProvinceData() {
   return {
@@ -13,3 +13,5 @@ function sampleProvinceData() {
     price: 20,
   };
 }
+
+module.exports = { sampleProvinceData };

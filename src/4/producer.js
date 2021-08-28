@@ -1,4 +1,4 @@
-export class Producer {
+class Producer {
   constructor(aProvince, data) {
     this._province = aProvince;
     this._cost = data.cost;
@@ -52,3 +52,5 @@ export class Producer {
     return Math.min(this._demand, this.totalProduction);
   }
 }
+
+module.exports = { Producer };
